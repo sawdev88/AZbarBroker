@@ -1,0 +1,209 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header {
+  background-image: url(bar.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+
+.header_text {
+  color: #fff;
+  background-color: rgba(25, 25, 25, 0.8);
+  display: inline-block;
+  padding: 40px 20%;
+  border-radius: 8px;
+  margin: 17% 0;
+}
+
+.header_text h1 {
+  font-size: 80px;
+}
+
+.down {
+  color: #fff;
+  font-size: 26px;
+  margin-top: -50px;
+}
+
+.intro {
+  padding: 36px 0;
+  margin: 12% 20%;
+}
+
+.intro h2 {
+  text-decoration: underline;
+  font-size: 48px;
+  padding-bottom: 10px;
+}
+
+.intro h4 {
+  font-size: 32px;
+}
+
+.row h5 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+
+.services {
+  background: #5f357d;
+  background: radial-gradient(circle farthest-corner at right bottom, #ffd08a 0%, #ffa376 28%, #d26578 52%, #682a84 79%, #241668 100%);
+  color: #fff;
+  padding: 130px 20px 56px 20px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 180px;
+}
+
+.services hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  margin-bottom: 88px;
+}
+
+.services h2 {
+  font-size: 92px;
+}
+
+.services h3 {
+  font-size: 48px;
+  margin-bottom: 32px;
+  text-decoration: underline;
+}
+
+.services span {
+  margin-top: 56px;
+  font-size: 56px;
+}
+
+.services ul {
+  background: rgba(0, 0, 0, .1);
+  border-radius: 15px;
+  width: 100%;
+  padding: 5px 0 20px 0;
+}
+
+.services li {
+  list-style: none;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  opacity: .9;
+}
+
+.services p {
+  font-size: 24px;
+  line-height: normal;
+  padding: 0 12px;
+  opacity: .8;
+}
+
+.prop {
+  border: 25px solid #343434;
+  margin: 80px;
+  padding: 16px;
+}
+
+.prop h2 {
+  font-size: 92px;
+  text-align: center;
+}
+
+.prop hr {
+  width: 60%;
+  margin-bottom: 50px;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.prop h3 {
+  font-size: 56px;
+}
+
+.prop p {
+  font-size: 24px;
+  line-height: normal;
+  padding: 20px;
+}
+
+.body_text {
+  white-space: pre-line;
+}
+
+.contact {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 40px;
+}
+
+.contact h2 {
+  font-size: 92px;
+}
+
+.contact p{
+  font-size: 48px;
+  padding: 40px 0;
+}
+
+.contact a {
+  color: #fff;
+}
+
+.contact a:hover {
+  color: #ffd08a;
+}
+
+.email a:hover {
+  color: #d26578;
+}
+
+.contact .glyphicon {
+  padding-bottom: 2px;
+}
+
+.footer {
+  text-align: right;
+  padding: 15px;
+}
+
+@media (max-width: 480px) {
+  .prop {
+    margin: 4px;
+    padding: 2px;
+  }
+
+  .prop h2 {
+    font-size: 40px;
+  }
+
+  .prop p {
+    font-size: 16px;
+  }
+
+  .col-md-4 {
+    margin-bottom: 48px;
+  }
+
+  .services li {
+    margin-left: 0;
+    font-size: 16px;
+    letter-spacing: normal;
+  }
+
+  .contact p {
+    font-size: 24px;
+  }
+}

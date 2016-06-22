@@ -1,29 +1,92 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="header">
+    <div class="header_text">
+      <h1>Arizona Bar Broker</h1>
+      <hr>
+      <h3>Selling bars and gettin paid</h3>
+    </div>
+    <div class="down">
+      <span class="glyphicon glyphicon-chevron-down"></span>
+    </div>
+  </div>
+  <div class="intro" id="about">
+    <h2>About Us</h2>
+    <h4>
+    Arizona Bar Brokers was created with one purpose in mind, to be the best bar brokers in Arizona.  Our focus is 100% directed towards the bar business.  We set the standard and make the market for bar properties and bar brokerage transactions.  We bring buyers and sellers together to efficiently complete transactions.  Our goal is to facilitate transactions that are win-win for all parties involved.  Our team has over ten years of experience in the bar industry, including operations, business sales, and commercial real estate.
+    <hr>
+    We offer full service business brokerage service for both bar sellers and buyers.  We also offer commercial real estate and operations consulting services.
+    <hr>
+    The decision to buy, sell, or start a bar is paramount in one's life.  We are here to guide you through that process, so that you can make the most informed decisions possible.<i class="fa fa-beer" aria-hidden="true"></i></h4>
+  </div>
+  <div class="services" id="services">
+    <h2>Services</h2>
+    <hr>
+    <div class="row">
+      <div class="col-md-4">
+        <ul>
+          <h3>For Sellers</h3>
+          <li>- Deal Structuring</li>
+          <li>- Negotiating and Handling Due Diligence</li>
+          <li>- Receiving and Evaluating Offers</li>
+          <li>- Qualifying Buyers Financially</li>
+          <li>- Contract Review</li>
+          <li>- Market Sector Evaluation</li>
+          <li>- Presentation of “Value Added” Buyer</li>
+          <li>- Valuation Estimates</li>
+          <li>- Management Advisement</li>
+          <li>- Extensive Marketing to Buyers</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+          <h3>Consulting</h3>
+          <p>We work with a team of experts who have been vetted over years based off of world class excellent execution and immaculate reputation.  If your bar is not performing to its maximum capacity, we can help develop and help execute a strategy to get you on the right path.  Our consulting services involve partners in financial controls, inventory controls, front and back of house operations, and promotions.  Our team is world class, as our the results.</p>
+        </div>
+      <div class="col-md-4">
+        <ul>
+          <h3>For Buyers</h3>
+          <li>- Deal Structuring</li>
+          <li>- Negotiating</li>
+          <li>- Introductions</li>
+          <li>- Valuation</li>
+          <li>- Analysis</li>
+          <li>- Financing Assistance and Strategy</li>
+          <li>- Market Sector Evalution</li>
+          <li>- Post-Deal Integration</li>
+        </ul>
+      </div>
+    </div>
+    <span class="glyphicon glyphicon-option-horizontal"></span>
+  </div>
 
-<h1>Listing Posts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="prop" id="blog">
+  <h2>Articles:</h2>
+  <hr>
+  <% @posts.each do |post| %>
+    <div class="post_stuffins">
+      <h3> - <%= post.title %></h3>
+      <p class="body_text"><%= post.body %></p>
+      <!-- <p><%= post.body %></p> -->
+      <br>
+    </div>
+  <% end %>
+</div>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="contact row" id="contact">
+  <h2>Contact</h2>
+  <div class="col-md-12">
+    <p class="glyphicon glyphicon-earphone"></p>
+    <br>
+    <a href="tel:1-4808624064"><p>123-123-1234</p></a>
+  </div>
+  <div class="col-md-12">
+    <p class="glyphicon glyphicon-envelope"></p>
+    <br>
+    <p class="email"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">AZbarBroker@gmail.com</a></p>
+  </div>
+</div>
 
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+<div class="footer">
+  <h4>AZ Bar Broker <a href="/admin">&copy</a>2016</h4>
+</div>
+</div>
