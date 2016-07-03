@@ -41,23 +41,23 @@ img {
   font-size: 14px;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-  color: #eee;
+.navbar-default .navbar-nav>li>a {
+  color: #333;
   padding-bottom: 10px;
 }
 
-.navbar-inverse .navbar-nav>li:hover {
+.navbar-default .navbar-nav>li:hover {
   border-bottom: 5px solid #ffd08a;
 }
 
-.navbar-inverse .navbar-nav>li:nth-of-type(2):hover {
+.navbar-default .navbar-nav>li:nth-of-type(2):hover {
   border-bottom: 5px solid #ffa376;
 }
 
-.navbar-inverse .navbar-nav>li:nth-of-type(3):hover {
+.navbar-default .navbar-nav>li:nth-of-type(3):hover {
   border-bottom: 5px solid #d26578;
 }
 
-.navbar-inverse .navbar-nav>li:nth-of-type(4):hover {
+.navbar-default .navbar-nav>li:nth-of-type(4):hover {
   border-bottom: 5px solid #682a84;
 }

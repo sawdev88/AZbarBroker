@@ -58,18 +58,20 @@
     <span class="glyphicon glyphicon-option-horizontal"></span>
   </div>
 
-<div class="prop" id="blog">
-  <h2>Articles:</h2>
-  <hr>
-  <% @posts.each do |post| %>
-    <div class="post_stuffins">
-      <h3> - <%= post.title %></h3>
-      <p class="body_text">
-        <%= post.body %>
-      </p>
-      <br>
-    </div>
-  <% end %>
+<div id="blog">
+  <div class="prop">
+    <h2>Articles:</h2>
+    <hr>
+    <% @posts.each do |post| %>
+      <div class="post_stuffins">
+        <h3> - <%= post.title %></h3>
+        <p class="body_text">
+          <%= post.body %>
+        </p>
+        <br>
+      </div>
+    <% end %>
+  </div>
 </div>
 
 <div class="contact row" id="contact">
