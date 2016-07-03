@@ -186,12 +186,16 @@
 
 @media (max-width: 480px) {
   .header {
-    height: 800px;
+
   }
 
   .header_text {
     padding: 88px 0;
-    margin-top: 100px;
+    margin-top: 80px;
+  }
+
+  .header_text h1 {
+    font-size: 64px;
   }
 
   .intro {
@@ -243,6 +247,7 @@
   }
 
   .contact {
+    margin-top: 64px;
     padding-left: 4px;
     padding-right: 4px;
   }
