@@ -185,10 +185,15 @@
 }
 
 @media (max-width: 480px) {
-  .header_text {
-    margin: 0;
-    padding: 180px 0;
+  .header {
+    height: 800px;
   }
+
+  .header_text {
+    padding: 88px 0;
+    margin-top: 100px;
+  }
+
   .intro {
     margin: 8px;
   }
@@ -210,10 +215,31 @@
     margin-bottom: 48px;
   }
 
+  .services {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .services h2 {
+    font-size: 72px;
+  }
+
+  .services h3 {
+    font-size: 40px;
+  }
+
   .services li {
     margin-left: 0;
     font-size: 16px;
     letter-spacing: normal;
+  }
+
+  .prop h2 {
+    font-size: 72px;
+  }
+
+  .prop h3 {
+    font-size: 32px;
   }
 
   .contact p {
