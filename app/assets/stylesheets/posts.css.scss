@@ -14,7 +14,7 @@
 
 .header_text {
   color: #fff;
-  background-color: rgba(25, 25, 25, 0.8);
+  background-color: rgba(25, 25, 25, 0.7);
   display: inline-block;
   padding: 40px 20%;
   border-radius: 8px;
@@ -184,12 +184,8 @@
 }
 
 @media (max-width: 480px) {
-  .header {
-
-  }
-
   .header_text {
-    padding: 88px 0;
+    padding: 4px 0;
     margin: 80px 0;
     border-radius: 0;
   }
